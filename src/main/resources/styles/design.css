@@ -1,7 +1,20 @@
+@font-face {
+    font-family: "SF Pro Rounded";
+    src: url("fonts/SF-Pro-Rounded-Regular.otf" );
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("fonts/PlayfairDisplay-Regular.ttf" );
+}   
+
 .label {
     -fx-font-family: "Playfair Display" , serif;
     -fx-font-size: 24px;
-    -fx-text-fill: gray;
+    -fx-text-fill: rgb(182, 86, 8);
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+
 }
 
 /* Root element styling */
@@ -54,15 +67,16 @@
 /* Pressed state */
 .glow-on-hover:pressed {
     -fx-text-fill: black;
-    -fx-background-color: transparent;
+    -fx-background-color: opaque(rgb(209, 197, 187));
+    -fx-effect: dropshadow(gaussian, transparent, 0, 0, 0, 0);
 }
 
 /* Hover state with glow effect */
 .glow-on-hover:hover {
     -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, 
-                    #ff0000, #ff7300, #fffb00, #48ff00, 
-                    #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    -fx-effect: dropshadow(gaussian, #ff00c8, 15, 0.7, 0, 0);  /* Use a single color here */
+                    #f5f5f5, #ffffff, #ffffff, #ffffff, 
+                    #ffffff, #ffffff, #ffffff, #f7f7f7, #ffffff);
+    -fx-effect: dropshadow(gaussian, glow(gray), 15, 0.7, 0, 0);  /* Use a single color here */
     -fx-border-width: 2px;
     -fx-border-radius: 10px;
 }
