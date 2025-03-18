@@ -1,15 +1,68 @@
-.button {
-    -fx-background-color: #3498db;
+.label {
+    -fx-font-family: "Playfair Display" , serif;
+    -fx-font-size: 24px;
+    -fx-text-fill: gray;
+}
+
+/* Root element styling */
+.root {
+    -fx-background-image: url("background.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+/* Text field styling */
+.text-field {
+    -fx-font-family: "SF Pro Rounded", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #111;
     -fx-text-fill: white;
+    -fx-border-color: #111;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+}
+
+/* Text area styling */
+.text-area {
+    -fx-font-family: "SF Pro Rounded";
+    -fx-font-size: 16px;
+    -fx-background-image: url("field.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: repeat;
+    -fx-text-fill: black;
+    -fx-border-color: #111;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+}
+
+/* Glow button styling */
+.glow-on-hover {
+    -fx-min-width: 220px;
+    -fx-min-height: 50px;
+    -fx-background-color: #111;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-background-radius: 10px;
     -fx-font-size: 14px;
     -fx-padding: 10px 20px;
-    -fx-border-radius: 20px;
+    -fx-effect: dropshadow(gaussian, transparent, 0, 0, 0, 0);
 }
 
-.button:hover {
-    -fx-background-color: #2980b9;
+/* Pressed state */
+.glow-on-hover:pressed {
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
 }
 
-.button:pressed {
-    -fx-background-color: #1f618d;
+/* Hover state with glow effect */
+.glow-on-hover:hover {
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, 
+                    #ff0000, #ff7300, #fffb00, #48ff00, 
+                    #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    -fx-effect: dropshadow(gaussian, #ff00c8, 15, 0.7, 0, 0);  /* Use a single color here */
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
 }

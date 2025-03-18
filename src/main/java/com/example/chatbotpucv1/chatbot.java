@@ -36,10 +36,9 @@ public class chatbot extends Application {
             } catch (Exception e) {
                 System.err.println("Erro ao carregar o arquivo CSS: " + e.getMessage());
             }
-
             // Try to load icon
             try {
-                URL iconUrl = getClass().getResource("/styles/logoppt.png");
+                URL iconUrl = getClass().getResource("/styles/logoficial.png");
                 if (iconUrl != null) {
                     Image icon = new Image(iconUrl.toExternalForm());
                     stage.getIcons().add(icon);

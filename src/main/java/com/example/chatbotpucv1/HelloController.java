@@ -44,6 +44,7 @@ public class HelloController {
         knowledgeBase.put("tchau", "Adeus! Tenha um ótimo dia!");
         knowledgeBase.put("adeus", "Até logo! Estou aqui se precisar de mais ajuda.");
         knowledgeBase.put("bye", "Tchau! Volte logo!");
+        knowledgeBase.put("kayn", "Faz gume e ludens que ta otimo");
 
         // Informacoes sobre a puc (EXEMPLO)
         knowledgeBase.put("puc", "A PUC é uma universidade católica com excelente reputação acadêmica.");
