@@ -35,7 +35,6 @@ public class HelloController {
         // Interacoes de boas vindas
         knowledgeBase.put("oi", "Olá! Como vai você?");
         knowledgeBase.put("olá", "Olá! Como posso ajudar?");
-        knowledgeBase.put("hello", "Olá! Como posso ajudar?");
         knowledgeBase.put("bom dia", "Bom dia! Em que posso ajudar?");
         knowledgeBase.put("boa tarde", "Boa tarde! Como posso ser útil hoje?");
         knowledgeBase.put("boa noite", "Boa noite! Precisa de alguma ajuda?");
@@ -43,18 +42,39 @@ public class HelloController {
         // Despedidas
         knowledgeBase.put("tchau", "Adeus! Tenha um ótimo dia!");
         knowledgeBase.put("adeus", "Até logo! Estou aqui se precisar de mais ajuda.");
-        knowledgeBase.put("bye", "Tchau! Volte logo!");
-        knowledgeBase.put("kayn", "Faz gume e ludens que ta otimo");
-        knowledgeBase.put("lula", "Faiz o L");
-        knowledgeBase.put("batata", "a batata ta 100 reais");
+
+        // pedido
+        knowledgeBase.put("Pedido", "Gostaria de ver o cardápio ? ");
+        knowledgeBase.put("cardápio", "Gostaria de sobremesa, entradas ou pratos pricipais ?");
+        knowledgeBase.put("pratos principais", "Os pratos de hoje são: Macaronada, Nhoque e Pizza !");
+        knowledgeBase.put("sobremesa","As sobremesas são: Palha italiana, Tiramissu e Gellato");
+        knowledgeBase.put("entradas", "As entradas são: Brusqueta, Tábua de frios e Salada tropical");
+        knowledgeBase.put("brusqueta", "Qual o endereço para a entrega ?");
+        knowledgeBase.put("tábua de frios", "Qual o endereço para a entrega ?");
+        knowledgeBase.put("salada tropical", "Qual o endereço para a entrega ?");
+        knowledgeBase.put("palha italiana", "Qual o endereço para a entrega ?");
+        knowledgeBase.put("tiramissu", "Qual o endereço para a entrega ?");
+        knowledgeBase.put("gellato", "Qual o endereço para a entrega ?");
+        knowledgeBase.put("nhoque", "Qual o endereço para a entrega ?");
+        knowledgeBase.put("macaronada","Qual o endereço para a entrega ?" );
+        knowledgeBase.put("pizza","Qual o endereço para a entrega ?" );
+        knowledgeBase.put("rua", "Seu pedido está sendo preparado e chegará em breve !");
 
 
-        // Informacoes sobre a puc (EXEMPLO)
-        knowledgeBase.put("puc", "A PUC é uma universidade católica com excelente reputação acadêmica.");
-        knowledgeBase.put("curso", "A PUC oferece diversos cursos de graduação e pós-graduação. Qual curso específico você gostaria de saber mais?");
-        knowledgeBase.put("matrícula", "Para informações sobre matrícula, acesse o portal do aluno ou entre em contato com a secretaria acadêmica.");
+
+        // Informacoes sobre o pedido (EXEMPLO)
+        knowledgeBase.put("preparado", "Seu pedido está sendo preparado !");
+        knowledgeBase.put("pagamento", "Qual será a forma de pagamento ?");
+        knowledgeBase.put("dinheiro", "Ok pedido confirmado !");
+        knowledgeBase.put("débito", "Ok pedido confirmado !");
+        knowledgeBase.put("crédito" , "Ok pedido confirmado !");
+        knowledgeBase.put("vale alimentação", "Ok pedido confirmado !");
+        knowledgeBase.put("pix" , "Ok seu pedido confirmado !");
+        knowledgeBase.put("formas de pagamentos aceitas", "Débito, Crédito, PIX, Vale alimentação");
 
         // espaco para adicionar futuras informacoes para o bot
+        knowledgeBase.put("funcionamento", "O restaurante funcionará das 13:00 até 22:30");
+        knowledgeBase.put("feedback", "Qual seria o feedback que gostaria de compartiihar" );
     }
 
     @FXML
@@ -114,6 +134,6 @@ public class HelloController {
         }
 
         // Resposta padrao para uma pergunta desconhecida ou fora do banco de dados
-        return "Desculpe, não entendi sua pergunta. Poderia reformular ou perguntar algo sobre a PUC?"; // PUC É SO UM EXEMPLO TEMPORARIO
+        return "Desculpe, não entendi sua pergunta. Poderia reformular ou perguntar algo sobre o pedido ?"; // PUC É SO UM EXEMPLO TEMPORARIO
     }
 }

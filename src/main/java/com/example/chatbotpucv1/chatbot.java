@@ -36,7 +36,7 @@ public class chatbot extends Application {
             } catch (Exception e) {
                 System.err.println("Erro ao carregar o arquivo CSS: " + e.getMessage());
             }
-            // Try to load icon
+            // Tenta carregar o ícone
             try {
                 URL iconUrl = getClass().getResource("/styles/logoficial.png");
                 if (iconUrl != null) {
@@ -49,7 +49,7 @@ public class chatbot extends Application {
                 System.err.println("Erro ao carregar o Icone: " + e.getMessage());
             }
 
-            // Configure the stage
+            // Configura o Stage
             stage.setTitle("Chatbot PUC");
             stage.setWidth(610);
             stage.setHeight(555);
@@ -59,7 +59,7 @@ public class chatbot extends Application {
             stage.setFullScreen(false);
             stage.setFullScreenExitHint("Para sair do modo tela cheia aperte ESC");
 
-            // Set the scene and show the stage
+            // Seta a Scene e mostra o Stage
             stage.setScene(scene);
             stage.show();
 
@@ -69,7 +69,7 @@ public class chatbot extends Application {
             throw e;
         }
     }
-
+        // error handling
     private void showErrorAlert(String title, String header, String content) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle(title);
