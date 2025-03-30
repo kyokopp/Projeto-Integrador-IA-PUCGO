@@ -37,15 +37,16 @@ public class HelloController {
         knowledgeBase.put("olá", "Olá! Como posso ajudar?");
         knowledgeBase.put("bom dia", "Bom dia! Em que posso ajudar?");
         knowledgeBase.put("boa tarde", "Boa tarde! Como posso ser útil hoje?");
-        knowledgeBase.put("boa noite", "Boa noite! Precisa de alguma ajuda?");
+        knowledgeBase.put("boa noite", "Boa noite! Como posso te ajudar ?");
 
         // Despedidas
         knowledgeBase.put("tchau", "Adeus! Tenha um ótimo dia!");
         knowledgeBase.put("adeus", "Até logo! Estou aqui se precisar de mais ajuda.");
 
         // pedido
-        knowledgeBase.put("Pedido", "Gostaria de ver o cardápio ? ");
-        knowledgeBase.put("cardápio", "Gostaria de sobremesa, entradas ou pratos pricipais ?");
+        knowledgeBase.put("pedido", "Digite ``Cardápio´´ para ver o cardapio do dia !");
+        knowledgeBase.put("sim", "Gostaria de uma sobremesa, entradas ou dos pratos principais ?");
+        knowledgeBase.put("cardápio", "Gostaria de uma sobremesa, entradas ou dos pratos principais ?");
         knowledgeBase.put("pratos principais", "Os pratos de hoje são: Macaronada, Nhoque e Pizza !");
         knowledgeBase.put("sobremesa","As sobremesas são: Palha italiana, Tiramissu e Gellato");
         knowledgeBase.put("entradas", "As entradas são: Brusqueta, Tábua de frios e Salada tropical");
@@ -69,12 +70,16 @@ public class HelloController {
         knowledgeBase.put("débito", "Ok pedido confirmado !");
         knowledgeBase.put("crédito" , "Ok pedido confirmado !");
         knowledgeBase.put("vale alimentação", "Ok pedido confirmado !");
-        knowledgeBase.put("pix" , "Ok seu pedido confirmado !");
+        knowledgeBase.put("pix" , "Ok pedido confirmado !");
         knowledgeBase.put("formas de pagamentos aceitas", "Débito, Crédito, PIX, Vale alimentação");
 
         // espaco para adicionar futuras informacoes para o bot
         knowledgeBase.put("funcionamento", "O restaurante funcionará das 13:00 até 22:30");
         knowledgeBase.put("feedback", "Qual seria o feedback que gostaria de compartiihar" );
+        knowledgeBase.put("melhorar", "Obrigado pelo feedback irei encaminha-lo aos responsáveis!");
+        knowledgeBase.put("obrigado", "De nada! Precisa de alguma mais ajuda ?");
+        knowledgeBase.put("obrigada", "De nada! Precisa de alguma mais ajuda ?");
+        knowledgeBase.put("não", "Okay !");
     }
 
     @FXML
@@ -130,10 +135,10 @@ public class HelloController {
 
         // Gere os pedidos de suporte
         if (lowerCaseMessage.contains("ajuda") || lowerCaseMessage.contains("help")) {
-            return "Posso responder perguntas sobre a PUC, cursos, matrícula e fornecer informações gerais. Como posso te ajudar hoje?";
+            return "Posso responder perguntas sobre o pedido e cardápio. Como posso te ajudar hoje?";
         }
 
         // Resposta padrao para uma pergunta desconhecida ou fora do banco de dados
-        return "Desculpe, não entendi sua pergunta. Poderia reformular ou perguntar algo sobre o pedido ?"; // PUC É SO UM EXEMPLO TEMPORARIO
+        return "Desculpe, não entendi sua pergunta. Poderia reformular ou perguntar algo sobre o pedido ?";
     }
 }

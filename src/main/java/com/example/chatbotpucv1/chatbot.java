@@ -56,7 +56,7 @@ public class chatbot extends Application {
             stage.setResizable(true);
             stage.setMinWidth(400);
             stage.setMinHeight(300);
-            stage.setFullScreen(false);
+            stage.setFullScreen(true);
             stage.setFullScreenExitHint("Para sair do modo tela cheia aperte ESC");
 
             // Seta a Scene e mostra o Stage
