@@ -38,10 +38,11 @@
   🚀 Como rodar o projeto
    ✅ Pré-requisitos
     Java instalado (JDK 11 ou superior).
-
     JavaFX configurado no projeto.
+    
 
   ▶️ Executando
+
    1 - Clone este repositório:
     https://github.com/kyokopp/Projeto-Integrador-IA-PUCGO
 
@@ -59,6 +60,7 @@
 
 [![GitHub Davi](https://img.shields.io/badge/GitHub-000?logo=github&style=for-the-badge)](https://github.com/kyokopp)  
 [![Email Davi](https://img.shields.io/badge/Email-D14836?logo=gmail&style=for-the-badge)](mailto:barrosdaviduarte@gmail.com)
+
 
  - Davi Duarte
 
