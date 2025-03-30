@@ -56,16 +56,18 @@
     Dúvidas ou sugestões? Entre em contato:
 
     
- - Davi Duarte
+
 [![GitHub Davi](https://img.shields.io/badge/GitHub-000?logo=github&style=for-the-badge)](https://github.com/kyokopp)  
 [![Email Davi](https://img.shields.io/badge/Email-D14836?logo=gmail&style=for-the-badge)](mailto:barrosdaviduarte@gmail.com)
 
- - Júlia Marques
+ - Davi Duarte
+
+
 [![GitHub Júlia](https://img.shields.io/badge/GitHub-000?logo=github&style=for-the-badge)](https://github.com/Ryuukes) 
 [![Email Júlia](https://img.shields.io/badge/Email-D14836?logo=gmail&style=for-the-badge)](mailto:juliadsouza24marques@gmail.com)  
 
 
-
+ - Júlia Marques
 
 
 
